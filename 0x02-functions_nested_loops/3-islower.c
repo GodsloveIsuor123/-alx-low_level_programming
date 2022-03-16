@@ -1,4 +1,4 @@
-#include "_putchar.c"
+#include "main.h"
 
 /**
  *_islower - Checks for lowercase character
