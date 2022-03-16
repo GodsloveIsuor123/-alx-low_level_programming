@@ -19,10 +19,3 @@ void print_alphabet_x10(void)
 		i++;
 	}
 }
-int main(void)
-{
-	print _alphabetx10();
-	return (0);
-}
-
-
