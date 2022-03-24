@@ -1,46 +1,27 @@
 #include "main.h"
 /**
- * _strcmp - Compares two strings
- * @s1: The first string
- * @s2: The second string
- * Return: int value
+ * _strncpy - Copy a string
+ * @dest: The destination vaue
+ * @src: The source value
+ * @n: The copy limit
+ * Return: char value
  */
-int _strcmp(char *s1, char *s2)
+char *_strncpy(char *dest, char *src, int n)
 {
-	int a = 0, b = 0, c = 0, r = 0, lim;
-
-	while (s1[a])
-	{
-		a++;
-	}
-	while (s2[b])
+	int a = 0, b = 0;
+	while (src[b])
 	{
 		b++;
 	}
-	if (a <= b)
+	while (a < n && src[a])
 	{
-		lim = a;
+		dest[a] = src[a];
+		a++;
 	}
-	else
+	while (a < n)
 	{
-		lim = b;
+		dest[a] = '\0';
+		a++;
 	}
-	while (c <= lim)
-	{
-		if (s1[c] == s2[c])
-		{
-			c++;
-			continue;
-			{
-				else
-				{
-					r = s1[c] - s2[c];
-					break;
-				}
-				c++;
-			}
-			return (r);
-		}
-	}
+	return (dest);
 }
-
