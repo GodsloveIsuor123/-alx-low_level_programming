@@ -20,11 +20,8 @@ char *_strpbrk(char *s, char *accept)
 				return (s);
 			}
 			t++;
-			{
-				r++;
-			}
-			return ('\0');
 		}
+		r++;
 	}
+	return ('\0');
 }
-
