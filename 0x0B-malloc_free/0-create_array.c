@@ -6,7 +6,7 @@
  * @c: The char to fill in the array
  * Return: array filled
  */
-char create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
 	char *s;
